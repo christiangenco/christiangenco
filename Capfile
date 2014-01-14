@@ -3,6 +3,7 @@ require "capistrano/shared_file"
 
 set :application, "blog"
 set :user, "cgenco"
+set :port, 42663
 set :deploy_to, "/home/#{user}/apps/#{application}"
 
 set :node_user, "remote-user"
