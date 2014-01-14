@@ -43,7 +43,6 @@ projectFilesBackup
 /_site
 /content/tmp/*
 /content/data/*
-/content/plugins/**/*
 /content/images/**/*
 !/README.md
 
