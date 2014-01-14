@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" href="/css/bootstrap.min.css"><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  {{!-- <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" /> --}}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap-theme.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div class="container">
+    <div class="row">
+      <div class="header col-sm-3 col-xs-12">
+        <a href="/" alt="Christian Genco">
+          <img src="/assets/images/christian.png" class="img-rounded img-responsive hidden-xs"/>
+        </a>
+        <h1>
+          <a href="/" alt="Christian Genco">Christian Genco</a>
+          <small style="font-size: 12pt; display: block">Web software architect and UX designer. Creator of <a href="http://dbinbox.com" target="_blank">dbinbox</a> and <a href="http://textbooksplease.com" target="_blank">textbooks please</a>. Part-time technology education evangelist and stage actor.</small>
+        </h1>
+
+        <div class="links">
+          <a href="http://www.facebook.com/cgenco">
+            <i class="icon-facebook-sign"></i>
+          </a>
+          <a href="https://twitter.com/cgenco">
+            <i class="icon-twitter-sign"></i>
+          </a>
+          <a href="https://github.com/christiangenco">
+            <i class="icon-github-sign"></i>
+          </a>
+          <a href="https://plus.google.com/117368766536996744082?rel=author">
+            <i class="icon-google-plus-sign"></i>
+          </a>
+          <a href="mailto:christian@gen.co">
+            <i class="icon-envelope"></i>
+          </a>
+          <a href="{{@blog.url}}/rss/">
+            <i class="icon-rss"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-1">
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+      </div>
+    </div>
+  </div>
+
+
+{{!--   <footer class="site-footer">
+    <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+    <div class="inner">
+       <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+       <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+    </div>
+  </footer> --}}
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  {{! The main JavaScript file for Casper }}
+  <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

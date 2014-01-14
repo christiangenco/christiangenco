@@ -1,0 +1,52 @@
+{{!< default}}
+
+{{!-- 
+<h2>Highlights</h2>
+
+{{#foreach posts}}
+<div class='row post'>
+  <div class='col-xs-8'>
+    <a href='{{url}}'>
+      <h4>TEDxSMU - You should learn to program</h4>
+    </a>
+    <time class="post-meta small text-muted" datetime="{{date format='YYYY-MM-DD'}}" style='font-size: 11pt'>
+      {{date format="DD MMM YYYY"}}
+    </time>
+    <p class="small">{{excerpt}}&hellip;</p>
+  </div>
+  <div class='col-xs-3'>
+    <a href='{{url}}'>
+      <img class='img-thumbnail col-mid-3 hidden-xs' src='/img/thumbnails/tedxsmu.jpg'>
+    </a>
+  </div>
+</div>
+{{/foreach}}
+ --}}
+
+<h2>Posts</h2>
+<ul class='ideas'>
+{{#foreach posts}}
+  <li class="{{post_class}}">
+    <h5>
+      <time class="post-meta small text-muted" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY MMM DD"}}</time>
+      </span>
+      <a href="{{url}}">{{{title}}}</a>
+    </h5>
+  </li>
+{{/foreach}}
+</ul>
+
+{{!--   {{#foreach posts}}
+
+        {{tags prefix="on "}}
+  <article class="{{post_class}}">
+      <header class="post-header">
+
+      </header>
+      <section class="post-excerpt">
+          
+      </section>
+  </article>
+
+  {{/foreach}}
+ --}}

@@ -1,0 +1,50 @@
+body {
+  font-family: georgia, garamond, serif;
+  padding-top: 30px;
+  background-color: #FFFCF8;
+}
+
+h1, h2, h3, h4, h5, h6, a.brand {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 14pt;
+  line-height: 25pt;
+  margin-bottom: 1em;
+}
+
+ul{
+  margin-left: -20px;
+}
+
+.post {
+  // margin-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+  
+  .links a {
+    font-size: 30pt;
+    /*display: block;*/
+    margin-right: 5px;
+  }
+
+  a {
+    color: black;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
