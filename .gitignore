@@ -31,7 +31,7 @@ projectFilesBackup
 .dist
 
 /core/client/tpl/hbs-tpl.js
-/core/client/assets/css
+# /core/client/assets/css
 .sass-cache/
 /core/client/assets/sass/config.rb
 /core/client/assets/sass/layouts/config.rb
