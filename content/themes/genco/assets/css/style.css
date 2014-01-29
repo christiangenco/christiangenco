@@ -34,3 +34,7 @@ ul {
 
 img {
   max-width: 100%; }
+
+.links a i{
+  color: #999;
+}
