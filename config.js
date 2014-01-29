@@ -47,13 +47,9 @@ config = {
         url: 'http://christian.gen.co',
         mail: {},
         database: {
-            client: 'mysql',
+            client: 'sqlite3',
             connection: {
-                host: 'localhost',
-                user: 'ghost',
-                password: 'mymagicghost7',
-                database: 'ghost',
-                charset: 'utf8'
+                filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
         },
