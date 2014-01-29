@@ -53,7 +53,7 @@ CHANGELOG.md
 /core/test/functional/*.png
 
 # Built asset files
-/core/built
+# /core/built
 
 # Coverage reports
 coverage.html
