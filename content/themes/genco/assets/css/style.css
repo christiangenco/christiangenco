@@ -38,3 +38,21 @@ img {
 .links a i{
   color: #999;
 }
+
+@media (min-width: 768px) {
+  .links a i{
+    font-size: 35pt;
+  }
+}
+
+@media (min-width: 992px) {
+  .links a i{
+    font-size: 18pt;
+  }
+}
+
+@media (min-width: 1200px) {
+  .links a i{
+    font-size: 26pt; /* ¯\_(ツ)_/¯ */
+  }
+}
