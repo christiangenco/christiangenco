@@ -23,12 +23,12 @@ set :shared_children, ["content/data", "content/images"]
 namespace :deploy do
   desc "Stop Forever"
   task :stop do
-    run "cd #{current_path} && forever stop index.js; true"
+    run "forever stop #{current_path}/index.js; true"
   end
  
   desc "Start Forever"
   task :start do
-    run "cd #{current_path} && NODE_ENV=production forever start index.js"
+    run "NODE_ENV=production forever start #{current_path}/index.js"
   end
  
   desc "Restart Forever"
