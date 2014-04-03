@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6, a.brand {
 h2, h3, h4 {
   margin-top: 0; }
 
+h3{
+  margin-top: 50px;
+  border-bottom: 1px solid #eee;
+}
+
 p, li {
   font-size: 14pt;
   line-height: 25pt;
